@@ -1,0 +1,85 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  background: #000000;
+  color: #f9fafb; /* putih agak lembut */
+  padding-top: 72px; /* ruang untuk navbar fixed */
+}
+nav h1 {
+  font-weight: 800;
+}
+nav a {
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #9ca3af; /* abu-abu terang */
+}
+.hero-section {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  margin-bottom: 6rem;
+  background: #000000;
+}
+.profile-img {
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(255 255 255 / 0.1);
+  max-width: 100%;
+  height: auto;
+}
+.card {
+  background: #1a1a1a;
+  border: 1px solid #333333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(59 130 246 / 0.5);
+}
+.btn-primary {
+  background: #ffffff;
+  color: #000000;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #3b82f6;
+  color: #ffffff;
+  outline: none;
+}
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #e0e7ff; /* biru muda */
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 6px;
+  background-color: #3b82f6;
+  border-radius: 3px;
+}
+#contact .icon {
+  font-size: 3.5rem;
+  color: #f9fafb;
+  transition: color 0.3s ease;
+}
+#contact .icon + .icon {
+  margin-left: 2rem;
+}
+#contact .icon:hover,
+#contact .icon:focus {
+  color: #3b82f6;
+  outline: none;
+}
+section {
+  margin-bottom: 6rem;
+}

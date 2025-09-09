@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ahmad Fatoni</title>
+    <!-- Memuat Tailwind CSS untuk styling cepat dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat font Montserrat dari Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Memuat Font Awesome untuk ikon sosial media dan kontak -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar / Navigasi utama -->
+    <nav
+      class="fixed top-0 w-full bg-black text-white z-10 shadow-lg border-b border-gray-700"
+    >
+      <div
+        class="container mx-auto px-4 sm:px-6 md:px-8 py-4 flex flex-wrap md:flex-nowrap justify-between items-center"
+      >
+        <!-- Nama / Logo -->
+        <h1 class="text-xl font-extrabold mb-2 md:mb-0">Ahmad Fatoni</h1>
+        <!-- Menu navigasi -->
+        <ul
+          class="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-sm md:text-base"
+        >
+          <li><a href="#home" class="block px-2 py-1">Home</a></li>
+          <li><a href="#about" class="block px-2 py-1">About Me</a></li>
+          <li>
+            <a href="#education" class="block px-2 py-1"
+              >Educational Background</a
+            >
+          </li>
+          <li><a href="#projects" class="block px-2 py-1">Projects</a></li>
+          <li><a href="#contact" class="block px-2 py-1">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Bagian Home / Hero -->
+    <section id="home" class="hero-section">
+      <div
+        class="container mx-auto px-4 sm:px-6 md:px-8 max-w-6xl flex flex-col md:flex-row items-center justify-center gap-8"
+      >
+        <!-- Teks di kiri -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+            Welcome
+          </h2>
+          <p
+            class="text-base sm:text-lg md:text-xl text-gray-400 mb-8 max-w-md"
+          >
+            I'm Ahmad Fatoni, A passionate Software Engineer dedicated to
+            building efficient and innovative software solutions.
+          </p>
+          <a
+            href="#about"
+            class="btn-primary px-6 py-3 rounded-lg inline-block text-base sm:text-lg md:text-xl"
+          >
+            Learn More
+          </a>
+        </div>
+        <!-- Foto di kanan -->
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+          <img
+            src="img/gambar1.jpeg"
+            alt="Foto Profil"
+            class="profile-img w-40 sm:w-48 md:w-56 lg:w-64 rounded-full shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian About Me -->
+    <section id="about" class="section bg-black px-4 sm:px-6 md:px-8">
+      <div class="container mx-auto max-w-6xl">
+        <!-- Judul section dengan garis biru -->
+        <h2 class="section-title text-center text-2xl sm:text-3xl md:text-4xl">
+          About Me
+        </h2>
+        <!-- Konten About Me dengan gambar dan teks -->
+        <div
+          class="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-5xl mx-auto"
+        >   
+          <!-- Teks About Me -->
+          <div
+            class="md:w-2/8 text-gray-300 text-base sm:text-lg leading-relaxed"
+          >
+            <p>
+              Saya adalah murid dari SMKN 7 BATAM di jurusan Rekayasa Perangkat
+              Lunak, saya memiliki minat dalam dunia teknologi,khususnya dalam
+              pemrograman dan pengembangan aplikasi. Saya senang mempelajari hal
+              baru untuk meningkatkan keterampilan saya di bidang ini.
+            </p>
+            <p class="mt-4">
+              Di waktu luang, saya membaca buku untuk memperluas wawasan,
+              mendengarkan musik untuk mendapatkan inspirasi,dan bermain
+              game,serta menonton film sebagai hiburan.
+            </p>
+          </div>
+          <!-- Gambar About Me -->
+        
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Educational Background -->
+    <section id="education" class="section bg-gray-900 px-4 sm:px-6 md:px-8">
+      <div class="container mx-auto max-w-6xl">
+        <!-- Judul section dengan garis biru -->
+        <h2 class="section-title text-center text-2xl sm:text-3xl md:text-4xl">
+          Educational Background
+        </h2>
+        <!-- Daftar pendidikan dalam grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+        >
+          <div class="card p-5 rounded-lg shadow-lg">
+            <h3 class="text-lg sm:text-xl font-semibold mb-3">SDN 008 BATAM</h3>
+            <p class="text-gray-400">2017-2022</p>
+            <p class="text-gray-500">SEKOLAH DASAR</p>
+          </div>
+          <div class="card p-5 rounded-lg shadow-lg">
+            <h3 class="text-lg sm:text-xl font-semibold mb-3">SMPN 12 BATAM</h3>
+            <p class="text-gray-400">2022-2025</p>
+            <p class="text-gray-500">SEKOLAH MENENGAH PERTAMA</p>
+          </div>
+          <div class="card p-5 rounded-lg shadow-lg">
+            <h3 class="text-lg sm:text-xl font-semibold mb-3">SMKN 7 BATAM</h3>
+            <p class="text-gray-400">2025-Sekarang</p>
+            <p class="text-gray-500">
+              Sekolah Menengah Atas/ Sekolah Menengah Kejuruan
+            </p>
+          </div>
+          <div class="card p-5 rounded-lg shadow-lg">
+            <h3 class="text-lg sm:text-xl font-semibold mb-3">Universitas</h3>
+            <p class="text-gray-400">-</p>
+            <p class="text-gray-500">-</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Projects -->
+    <section id="projects" class="section bg-black px-4 sm:px-6 md:px-8">
+      <div class="container mx-auto max-w-6xl">
+        <!-- Judul section dengan garis biru -->
+        <h2 class="section-title text-center text-2xl sm:text-3xl md:text-4xl">
+          Projects
+        </h2>
+        <!-- Daftar proyek dalam grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+        >
+          <div class="card p-5 rounded-lg shadow-lg">
+            <h3 class="text-lg sm:text-xl font-semibold mb-3">
+              Project A: Portfolio Website
+            </h3>
+            <p class="text-gray-300 mt-2 text-sm sm:text-base">
+              Website ini merupakan portofolio yang saya rancang untuk
+              memperkenalkan siapa saya dan proyek-proyek yang pernah saya
+              buat.Dengan desain yang simpel namun menarik.
+            </p>
+            <a
+              href="#"
+              class="btn-primary inline-block mt-4 px-4 py-2 rounded text-sm sm:text-base"
+              >View Project</a
+            >
+          </div>
+          <div class="card p-5 rounded-lg shadow-lg">
+            <h3 class="text-lg sm:text-xl font-semibold mb-3">
+              Project B: To-Do List
+            </h3>
+            <p class="text-gray-300 mt-2 text-sm sm:text-base">
+              Saya membuat ini agar tetap produktif dengan mengatur daftar tugas
+              harian. Dengan desain yang simpel dan fitur pengelolaan tugas
+            </p>
+            <a
+              href="#"
+              class="btn-primary inline-block mt-4 px-4 py-2 rounded text-sm sm:text-base"
+              >View Project</a
+            >
+          </div>
+          <div class="card p-5 rounded-lg shadow-lg">
+            <h3 class="text-lg sm:text-xl font-semibold mb-3">Project C: -</h3>
+            <p class="text-gray-300 mt-2 text-sm sm:text-base">-</p>
+            <a
+              href="#"
+              class="btn-primary inline-block mt-4 px-4 py-2 rounded text-sm sm:text-base"
+              >-</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bagian Contact -->
+    <section id="contact" class="section bg-gray-900 px-4 sm:px-6 md:px-8">
+      <div class="container mx-auto text-center">
+        <!-- Judul section dengan garis biru -->
+        <h2 class="section-title text-2xl sm:text-3xl md:text-4xl mb-8">
+          Contact
+        </h2>
+        <!-- Ikon kontak besar dan berjajar rapi -->
+        <div class="flex justify-center gap-12 flex-wrap">
+          <a
+            href="https://www.instagram.com/amd.ftoni/"
+            class="icon"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="mailto:fatoniamd09@gmail.com" class="icon" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="tel:+62 8700 4849" class="icon" aria-label="Phone"
+            ><i class="fas fa-phone"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="bg-black text-white py-6 text-center border-t border-gray-700"
+    >
+      <p>© 2025 Ahmad Fatoni. All rights reserved.</p>
+    </footer>
+
+    <!-- Menghubungkan file JavaScript eksternal -->
+    <script src="script.js"></script>
+  </body>
+</html>

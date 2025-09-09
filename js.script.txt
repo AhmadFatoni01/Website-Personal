@@ -1,0 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Smooth scroll untuk anchor link
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // Animasi shadow navbar saat scroll
+  window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 10) {
+      nav.classList.add("shadow-2xl");
+    } else {
+      nav.classList.remove("shadow-2xl");
+    }
+  });
+});
